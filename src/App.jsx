@@ -25,21 +25,21 @@ const App = () => {
   const amenities = [
     {
       id: 1,
-      name: "Gas Station",
-      position: [25.1737019, 75.8574194],
-      type: "Gas",
+      name: "https://maps.app.goo.gl/qZogNKw61B25r97f9",
+      position: [26.122064, 76.251082],
+      type: "WSA",
     },
     {
       id: 2,
-      name: "Food Court",
-      position: [25.1837019, 75.8574194],
-      type: "Food",
+      name: "https://maps.app.goo.gl/qZogNKw61B25r97f9",
+      position: [25.199346, 76.100841],
+      type: "WSA",
     },
     {
       id: 3,
-      name: "Restroom",
-      position: [25.1937019, 75.8574194],
-      type: "Restroom",
+      name: "https://maps.app.goo.gl/uz2KMpMRQpVaF6RH6",
+      position: [24.925012, 75.968874],
+      type: "WSA",
     },
   ];
 
@@ -75,22 +75,23 @@ const App = () => {
         </div>
       </header>
 
-      <main className="container mx-auto py-6 px-4 lg:flex lg:items-start">
+      {/* Hero Section*/}
+      <section className="container mx-auto pt-6 px-4 lg:flex lg:items-start">
         {/* Text Section */}
         <div className="mx-auto max-w-2xl py-16 sm:py-32 lg:py-48 lg:pr-8">
           <div className="hidden sm:flex sm:justify-center mb-8">
             <div className="relative rounded-full px-3 py-1 text-sm text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Give your valuable feedback
+              Give your valuable feedback{" "}
               <a href="#ratings" className="font-semibold text-indigo-600">
-                <span aria-hidden="true" className="absolute inset-0" />
-                Here <span aria-hidden="true">&rarr;</span>
+                <span aria-hidden="true" className="absolute inset-0" /> Here{" "}
+                <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
 
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              Shakthi WSA Refresh
+              Shakti WSA
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl">
               Find the best stops for food, fuel, and relaxation on your highway
@@ -183,7 +184,7 @@ const App = () => {
             </div>
           </div>
         </div>
-      </main>
+      </section>
 
       {/* Main Content */}
       <main className="flex-grow container mx-auto">
@@ -195,11 +196,11 @@ const App = () => {
           <div className="text-center max-w-3xl">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Route Refresh brings you India's top network of wayside amenities,
-              enhancing highway travel with food plazas, fuel stations, retail
-              shops, childcare facilities, hygienic toilets, vehicle repair
-              services, and more, ensuring a recharging and comfortable journey
-              for all travelers.
+              Shakti Service Station WSA brings you India's top network of
+              wayside amenities, enhancing highway travel with food plazas, fuel
+              stations, retail shops, childcare facilities, hygienic toilets,
+              vehicle repair services, and more, ensuring a recharging and
+              comfortable journey for all travelers.
             </p>
           </div>
         </section>
@@ -257,8 +258,8 @@ const App = () => {
           </h2>
           <div className="h-[500px] rounded-lg overflow-hidden shadow-md">
             <MapContainer
-              center={[25.1837019, 75.8574194]} // Kota
-              zoom={14}
+              center={[25.199346, 76.100841]} // WSA
+              zoom={7}
               style={{ height: "100%", width: "100%" }}
             >
               <TileLayer
@@ -268,7 +269,11 @@ const App = () => {
               {amenities.map((amenity) => (
                 <Marker key={amenity.id} position={amenity.position}>
                   <Popup>
-                    <strong>{amenity.name}</strong>
+                    {/* <strong>{amenity.name}</strong> */}
+                    <a href={amenity.name} target="_blank">
+                      {" "}
+                      Gmaps link
+                    </a>
                     <br />
                     {amenity.type} Available
                   </Popup>
