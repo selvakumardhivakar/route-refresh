@@ -1,4 +1,6 @@
 @import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

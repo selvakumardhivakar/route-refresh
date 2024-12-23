@@ -3,6 +3,8 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { motion } from "framer-motion";
+import TopBrands from "./components/top-brands";
+import OldTopBrands from "./components/old-top-brands";
 
 // Fix default Leaflet marker icon URLs
 const defaultIcon = L.icon({
@@ -48,7 +50,7 @@ const App = () => {
       className="min-h-screen bg-gray-50 flex flex-col"
     >
       {/* Header */}
-      <header className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white shadow-lg py-8">
+      <header className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white shadow-lg max-md:px-4 max-md:py-8 py-16">
         <div className="container mx-auto text-center">
           <h1 className="text-6xl font-extrabold tracking-tight">
             Route Refresh
@@ -56,26 +58,26 @@ const App = () => {
           <p className="mt-4 text-xl font-light">
             Your trusted highway companion for a seamless journey.
           </p>
-          <button className="mt-6 px-8 py-3 bg-white text-purple-600 rounded-full font-medium shadow-lg hover:bg-purple-100">
+          {/* <button className="mt-6 px-8 py-3 bg-white text-purple-600 rounded-full font-medium shadow-lg hover:bg-purple-100">
             Explore Amenities
-          </button>
+          </button> */}
         </div>
       </header>
 
       {/* Main Content */}
       <main className="flex-grow container mx-auto px-6 py-12 space-y-12">
         {/* About Section */}
-        <section className="bg-gradient-to-r from-blue-100 via-purple-200 to-pink-200 shadow-lg rounded-lg p-8">
-          <h2 className="text-4xl font-bold text-gray-800 text-center mb-4">
-            About Us
-          </h2>
-          <p className="text-gray-600 text-center">
-            Route Refresh brings you India's top network of wayside amenities,
-            enhancing highway travel with food plazas, fuel stations, retail
-            shops, childcare facilities, hygienic toilets, vehicle repair
-            services and more, ensuring a recharging and comfortable journey for
-            all travelers.
-          </p>
+        <section className="flex items-center justify-center">
+          <div className="text-center max-w-3xl">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              Route Refresh brings you India's top network of wayside amenities,
+              enhancing highway travel with food plazas, fuel stations, retail
+              shops, childcare facilities, hygienic toilets, vehicle repair
+              services, and more, ensuring a recharging and comfortable journey
+              for all travelers.
+            </p>
+          </div>
         </section>
 
         {/* Intro Section */}
@@ -118,44 +120,10 @@ const App = () => {
         </section>
 
         {/* Amenities Section */}
-        <section className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">
-            What We Offer
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {/* Gas Stations */}
-            <div className="bg-gradient-to-b from-blue-50 via-white to-blue-100 shadow-lg rounded-xl p-6 text-center hover:scale-105 transition-transform">
-              <span className="inline-block text-6xl mb-4">⛽</span>
-              <h3 className="text-2xl font-semibold text-blue-800 mb-2">
-                Gas Stations
-              </h3>
-              <p className="text-gray-600">
-                Locate fuel stations to keep your journey smooth and
-                uninterrupted.
-              </p>
-            </div>
-            {/* Food Courts */}
-            <div className="bg-gradient-to-b from-green-50 via-white to-green-100 shadow-lg rounded-xl p-6 text-center hover:scale-105 transition-transform">
-              <span className="inline-block text-6xl mb-4">🍽️</span>
-              <h3 className="text-2xl font-semibold text-green-800 mb-2">
-                Food Courts
-              </h3>
-              <p className="text-gray-600">
-                Recharge with delicious meals and beverages during your journey.
-              </p>
-            </div>
-            {/* Restrooms */}
-            <div className="bg-gradient-to-b from-yellow-50 via-white to-yellow-100 shadow-lg rounded-xl p-6 text-center hover:scale-105 transition-transform">
-              <span className="inline-block text-6xl mb-4">🚻</span>
-              <h3 className="text-2xl font-semibold text-yellow-800 mb-2">
-                Restrooms
-              </h3>
-              <p className="text-gray-600">
-                Find clean and hygienic restrooms for a comfortable journey.
-              </p>
-            </div>
-          </div>
-        </section>
+        <OldTopBrands />
+
+        {/* Top Brands Section */}
+        <TopBrands />
 
         {/* Map Section */}
         <section className="bg-gradient-to-br from-indigo-50 to-white shadow-xl rounded-lg p-8">
