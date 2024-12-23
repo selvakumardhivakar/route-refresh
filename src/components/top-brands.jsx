@@ -90,7 +90,10 @@ const TopBrands = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-white to-gray-50 py-12">
+    <section
+      id="partners"
+      className="bg-gradient-to-b from-white to-gray-50 py-12"
+    >
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">
           Top Brands
