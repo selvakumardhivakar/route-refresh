@@ -54,7 +54,7 @@ const App = () => {
 
       <header className="w-full bg-white shadow-md">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold text-blue-600">Shakti WSA</div>
+          <div className="text-xl font-bold text-blue-600">Shakti Service</div>
           <nav className="space-x-6 hidden sm:block">
             <a href="#about-us" className="text-gray-700 hover:text-blue-600">
               About US
@@ -91,7 +91,7 @@ const App = () => {
 
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              Shakti WSA
+              Shakti Service Wayside Amenities
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl">
               Find the best stops for food, fuel, and relaxation on your highway
@@ -196,11 +196,7 @@ const App = () => {
           <div className="text-center max-w-3xl">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Shakti Service Station WSA brings you India's top network of
-              wayside amenities, enhancing highway travel with food plazas, fuel
-              stations, retail shops, childcare facilities, hygienic toilets,
-              vehicle repair services, and more, ensuring a recharging and
-              comfortable journey for all travelers.
+            Shakti Service, a name synonymous with quality fuel, is embarking on a new chapter. We're bringing a fresh perspective to wayside amenities, ensuring every stop is a memorable experience. As newcomers to this industry, we're unburdened by the limitations of the past. We're building something extraordinary – a new standard for comfort, convenience, and delight that will redefine your journey.
             </p>
           </div>
         </section>
