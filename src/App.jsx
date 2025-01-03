@@ -92,7 +92,7 @@ const App = () => {
 
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              Shakti Service Wayside Amenities
+              Shakti Service WSA
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl">
               Find the best stops for food, fuel, and relaxation on your highway
