@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import TopBrands from "./components/top-brands";
 import OldTopBrands from "./components/old-top-brands";
 import Slider from "react-slick";
+import HighwayAmenity from "./components/highway-amenity";
 
 // Fix default Leaflet marker icon URLs
 const defaultIcon = L.icon({
@@ -37,7 +38,7 @@ const App = () => {
     },
     {
       id: 3,
-      name: "https://maps.app.goo.gl/uz2KMpMRQpVaF6RH6",
+      name: "https://maps.app.goo.gl/qZogNKw61B25r97f9",
       position: [24.925012, 75.968874],
       type: "WSA",
     },
@@ -78,7 +79,7 @@ const App = () => {
       {/* Hero Section*/}
       <section className="container mx-auto pt-6 px-4 lg:flex lg:items-start">
         {/* Text Section */}
-        <div className="mx-auto max-w-2xl py-16 sm:py-32 lg:py-48 lg:pr-8">
+        <div className="mx-auto max-w-2xl py-12 sm:py-32 lg:py-48 lg:pr-8">
           <div className="hidden sm:flex sm:justify-center mb-8">
             <div className="relative rounded-full px-3 py-1 text-sm text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Give your valuable feedback{" "}
@@ -127,7 +128,7 @@ const App = () => {
               </div>
               <div>
                 <img
-                  src="https://scontent.fcjb3-3.fna.fbcdn.net/v/t39.30808-6/444482087_773098941678777_5702959502943968742_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6Moyd1_TX6YQ7kNvgF76zxR&_nc_zt=23&_nc_ht=scontent.fcjb3-3.fna&_nc_gid=AlcuDwMJDn-gIc0Wwz_sw3r&oh=00_AYDZlmQQB0hCpLdq1Xq-zvcR2c2lvvZ6W5csP7N1UkORbg&oe=676F236A"
+                  src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20230303035008.jpg"
                   alt="Highway stop 3"
                   className="w-full h-[300px] object-cover rounded-lg shadow-lg"
                 />
@@ -143,11 +144,11 @@ const App = () => {
           </div>
 
           {/* Grid for lg screens */}
-          <div className="hidden lg:block min-h-screen flex items-center justify-center">
+          <div className="hidden lg:block min-h-full flex items-center justify-center">
             <div className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mt-4">
                 <img
-                  src="https://scontent.fcjb3-3.fna.fbcdn.net/v/t39.30808-6/444482087_773098941678777_5702959502943968742_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6Moyd1_TX6YQ7kNvgF76zxR&_nc_zt=23&_nc_ht=scontent.fcjb3-3.fna&_nc_gid=AlcuDwMJDn-gIc0Wwz_sw3r&oh=00_AYDZlmQQB0hCpLdq1Xq-zvcR2c2lvvZ6W5csP7N1UkORbg&oe=676F236A"
+                  src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20230303035008.jpg"
                   alt="Highway stop 3"
                   className="w-full sm:w-1/3 rounded-lg shadow-lg"
                 />
@@ -171,7 +172,7 @@ const App = () => {
               </div>
               <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mt-4">
                 <img
-                  src="https://scontent.fcjb3-3.fna.fbcdn.net/v/t39.30808-6/444482087_773098941678777_5702959502943968742_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6Moyd1_TX6YQ7kNvgF76zxR&_nc_zt=23&_nc_ht=scontent.fcjb3-3.fna&_nc_gid=AlcuDwMJDn-gIc0Wwz_sw3r&oh=00_AYDZlmQQB0hCpLdq1Xq-zvcR2c2lvvZ6W5csP7N1UkORbg&oe=676F236A"
+                  src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20230303035008.jpg"
                   alt="Highway stop 3"
                   className="w-full sm:w-1/3 rounded-lg shadow-lg"
                 />
@@ -187,9 +188,9 @@ const App = () => {
       </section>
 
       {/* Main Content */}
-      <main className="flex-grow container mx-auto">
+      <main className="flex-grow mt-6 container mx-auto">
         {/* About Section */}
-        <section
+        {/* <section
           id="about-us"
           className="flex items-center justify-center px-6 pb-6 space-y-12"
         >
@@ -199,43 +200,98 @@ const App = () => {
             Shakti Service, a name synonymous with quality fuel, is embarking on a new chapter. We're bringing a fresh perspective to wayside amenities, ensuring every stop is a memorable experience. As newcomers to this industry, we're unburdened by the limitations of the past. We're building something extraordinary – a new standard for comfort, convenience, and delight that will redefine your journey.
             </p>
           </div>
+        </section> */}
+
+        <section className="bg-white py-12 px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2 md:mb-4 text-center">
+            About Us {/* Changed text to "About Us" */}
+          </h2>
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center">
+              {" "}
+              {/* Align items to start */}
+              <div className="md:w-1/4 mb-8 md:mb-0 md:pr-8">
+                <img
+                  src="https://media.istockphoto.com/id/1269785368/vector/road-construction-logo-road-maintenance-creative-sign-concept-paving-design-template-vector.jpg?s=612x612&w=0&k=20&c=nsHUDbyjIO1rFRpkgsug51nz-39zPx470CF6vIlcsg8="
+                  alt="Shakti Service Logo"
+                  className="w-full rounded-lg shadow-lg object-cover h-64 md:h-auto"
+                />
+              </div>
+              <div className="md:w-3/4">
+                {/* <div className="mb-4 md:mb-6 flex justify-center md:justify-start">
+                 
+                  
+                  <img
+                    src="https://images.pexels.com/photos/63324/california-road-highway-mountains-63324.jpeg" // Replace with your logo path
+                    alt="Your Logo"
+                    className="h-16 w-auto" // Consistent small logo size
+                  />
+                </div> */}
+                <p className="text-base md:text-lg text-gray-700 mb-6 md:mb-8 leading-relaxed text-center md:text-left">
+                  Shakti Service Station, trusted for quality fuel, is now your
+                  complete roadside destination. We're setting a new standard
+                  for wayside amenities, offering convenient refueling, ample
+                  parking, comfortable lodging, and more. Experience the
+                  difference - every stop is designed to enhance your journey.
+                </p>
+                <div className="flex flex-col md:flex-row justify-around md:justify-start items-center md:space-x-8">
+                  <div className="text-center md:text-left mb-4 md:mb-0">
+                    <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
+                      30+ Years
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      of Experience in this industry
+                    </p>
+                  </div>
+                  <div className="text-center md:text-left">
+                    <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
+                      5+ Projects
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      Successful delivered with excellence
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
-        {/* Intro Section */}
-        <section className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-800">
-            Why we are the best?
-          </h2>
-          <p className="mt-4 text-gray-600 leading-relaxed">
-            Discover clean, safe, and convenient stops along your route. Whether
-            you need fuel, food, or restrooms, we've got you covered.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div className="bg-white shadow-xl rounded-lg p-6 hover:shadow-2xl">
-              <h3 className="text-xl font-semibold text-purple-700 mb-4">
-                Reliable Locations
-              </h3>
-              <p className="text-gray-600">
-                Every location is verified to ensure quality services and
-                facilities.
-              </p>
-            </div>
-            <div className="bg-white shadow-xl rounded-lg p-6 hover:shadow-2xl">
-              <h3 className="text-xl font-semibold text-blue-700 mb-4">
-                Interactive Map
-              </h3>
-              <p className="text-gray-600">
-                Easily locate amenities on our user-friendly and responsive map.
-              </p>
-            </div>
-            <div className="bg-white shadow-xl rounded-lg p-6 hover:shadow-2xl">
-              <h3 className="text-xl font-semibold text-green-700 mb-4">
-                Hygienic Facilities
-              </h3>
-              <p className="text-gray-600">
-                Find restrooms and food courts that meet the highest hygiene
-                standards.
-              </p>
+        <section className="py-12 bg-white">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-gray-800 mb-6">Amenities</h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-10">
+              Discover clean, safe, and convenient stops along your route.
+              Whether you need fuel, food, or restrooms, we've got you covered.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+              <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl">
+                <h3 className="text-xl font-semibold text-purple-700 mb-4">
+                  Reliable Locations
+                </h3>
+                <p className="text-gray-600">
+                  Every location is verified to ensure quality services and
+                  facilities.
+                </p>
+              </div>
+              <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl">
+                <h3 className="text-xl font-semibold text-blue-700 mb-4">
+                  Interactive Map
+                </h3>
+                <p className="text-gray-600">
+                  Easily locate amenities on our user-friendly and responsive
+                  map.
+                </p>
+              </div>
+              <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl">
+                <h3 className="text-xl font-semibold text-green-700 mb-4">
+                  Hygienic Facilities
+                </h3>
+                <p className="text-gray-600">
+                  Find restrooms and food courts that meet the highest hygiene
+                  standards.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -266,12 +322,11 @@ const App = () => {
                 <Marker key={amenity.id} position={amenity.position}>
                   <Popup>
                     {/* <strong>{amenity.name}</strong> */}
+
                     <a href={amenity.name} target="_blank">
                       {" "}
-                      Gmaps link
+                      Click here to open the location in Google Maps
                     </a>
-                    <br />
-                    {amenity.type} Available
                   </Popup>
                 </Marker>
               ))}
@@ -338,6 +393,22 @@ const App = () => {
                   ))}
                 </div>
               </div>
+              {/* Feedback Textarea */}
+              <div>
+                <label
+                  htmlFor="phonenumber"
+                  className="block text-gray-700 font-medium mb-2"
+                >
+                  Phone Number
+                </label>
+                <input
+                  id="phonenumber"
+                  name="phonenumber"
+                  type="number"
+                  placeholder="+91 ..."
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
 
               {/* Feedback Textarea */}
               <div>
@@ -369,6 +440,8 @@ const App = () => {
           </div>
         </section>
       </main>
+      {/* 
+      <HighwayAmenity /> */}
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
